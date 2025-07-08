@@ -1,0 +1,27 @@
+/event-organizer/
+│
+├── app.js                 # Point d’entrée principal (Express, routes, etc.)
+├── routes/
+│   └── events.js          # Routes liées aux événements
+│
+├── controllers/
+│   └── eventController.js # Logique métier (gérer les événements)
+│
+├── models/
+│   └── event.js           # Structure du modèle Event (objet JS en mémoire)
+│
+├── views/
+│   ├── layout.pug         # Layout principal (boilerplate HTML)
+│   ├── index.pug          # Page d’accueil (liste des événements)
+│   ├── event.pug          # Détails d’un événement
+│   ├── create.pug         # Formulaire de création
+│   ├── participants.pug   # Liste des participants
+│
+├── public/
+│   ├── css/
+│   │   └── style.css      # (optionnel) Fichier de styles
+│   └── js/
+│       └── script.js      # (optionnel) JS client
+│
+└── data/
+    └── eventsData.js      # (optionnel) Fichier de données fictives en mémoire
