@@ -15,13 +15,13 @@
 │   ├── index.pug          # Page d’accueil (liste des événements)
 │   ├── event.pug          # Détails d’un événement
 │   ├── create.pug         # Formulaire de création
-│   ├── participants.pug   # Liste des participants
+│   ├── participants.pug   # Liste des participants (les artistes)
 │
 ├── public/
 │   ├── css/
 │   │   └── style.css      # (optionnel) Fichier de styles
 │   └── js/
-│       └── script.js      # (optionnel) JS client
+│       └── script.js      # (optionnel) JS client (côté navigateur)
 │
 └── data/
-    └── eventsData.js      # (optionnel) Fichier de données fictives en mémoire
+    └── eventsData.js      # Fichier de données fictives en mémoire (en mémoire signifie que les données sont en local -- pas de base de données)
