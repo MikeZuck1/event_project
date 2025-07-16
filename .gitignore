@@ -15,3 +15,7 @@ Thumbs.db
 
 # VS Code settings
 .vscode/ 
+
+# Ignore roles.txt file
+# This file contains the roles and responsibilities for the project team
+roles.txt

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid #ccc;  */
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  align-content: flex-start; /* Aligne les lignes en haut */
+}
+
+.block {
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px; /* Largeur fixe */
+  height: 80px; /* Hauteur fixe */
+  background: #f0f0f0;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
