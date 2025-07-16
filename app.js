@@ -4,10 +4,10 @@ const morgan = require("morgan");
 const path = require("path");
 // Import event routes
 const eventRoutes = require("./routes/events.js");
-const attendeeRoutes = require("./routes/attendees");
+const attendeeRoutes = require("./routes/attendees"); 
 
 app.use("/events", eventRoutes);
-app.use("/attendees", attendeeRoutes);
+app.use("/attendees", attendeeRoutes); 
 
 // Middleware to log requests
 app.use(morgan("short"));
