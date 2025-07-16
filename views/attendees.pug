@@ -2,8 +2,16 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/main.css")
+    link(rel="stylesheet" href="/css/blockAttendees.css")
     title attendees list
   body
     h1 Attendees List
-    p Here are the attendees (artistes) for the event.
+    p.paragraph Welcome to the attendees list page. Here you can view all the attendees for the event.
+    .container
+      .content
+        - for(let i = 0; i <= 29; i++)
+          .block Block #{i}
+    footer
+      p &copy; 2025 Event Management -- All rights reserved.
