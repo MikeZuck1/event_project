@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
-const morgan = require("morgan");
+const morgan = require("morgan"); // HTTP request logger middleware
 const path = require("path");
+
 // Import event routes
 const eventRoutes = require("./routes/events.js");
 const attendeeRoutes = require("./routes/attendees");
+const indexRoutes = require("./routes/index.js");
 
 // Middleware to log requests
 app.use(morgan("short"));
@@ -13,13 +15,10 @@ app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-enco
 
 app.use("/events", eventRoutes);
 app.use("/attendees", attendeeRoutes);
+app.use("/", indexRoutes); // Use index routes for the root path
 
 // template engine setup
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
-
-app.get("/", (req, res) => {
-  res.render("index"); // Render the index.pug template
-});
 
 app.listen(3000);

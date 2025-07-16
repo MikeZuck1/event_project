@@ -8,4 +8,4 @@ const eventController = require('../controllers/eventController');
 router.get('/', eventController.getAllEvents); // Route to get all events
 router.get('/:id', eventController.getEventById); // Route to get event by id
 
-module.exports = router;  
+module.exports = router;
