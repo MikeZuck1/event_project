@@ -1,5 +1,7 @@
+const events = require("../data/eventsData.js");
+
 exports.getAllIndex = (req, res) => {
-  res.status(200).render("index");
+  res.status(200).render("index", { events });
 };
 
 exports.getIndexById = (req, res) => {

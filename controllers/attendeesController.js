@@ -5,6 +5,6 @@ exports.getAllAttendees = (req, res) => {
 };
 
 exports.getAttendeeById = (req, res) => {
-  const id = req.params.id;
-  res.send(`Détails du participant ID: ${id}`);
+  const { id } = req.params;
+  res.send(`: ${id}`);
 };

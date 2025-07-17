@@ -8,6 +8,25 @@ html(lang="en")
     title home
   body
     h1 Discover the events in Belgium.
-    p.paragraph  Welcome to the home page!
+    p.paragraph Welcome to the univers of events in Belgium. Here you can find all the information you need about upcoming events, popular events, and the latest news.
+    h2 Upcoming events
+    ul
+      each event in events
+        li
+          h3= event.title
+          p Date: #{event.date}
+          p Location: #{event.location}
+    h2 Popular events
+    ul
+      li Event A - Date: 2025-04-05
+      li Event B - Date: 2025-05-20
+      li Event C - Date: 2025-06-30
+    h2 Latest news
+    ul
+      li News 1 - Date: 2025-01-10
+      li News 2 - Date: 2025-02-20
+      li News 3 - Date: 2025-03-15
+    h2 Contact us
+    p If you have any questions, feel free to reach out to us at belgium@event.be
     footer
       p &copy; 2025 Event Management -- All rights reserved.
