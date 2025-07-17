@@ -1,0 +1,32 @@
+Voici une répartition équilibrée pour votre projet d'organisateur d'événements :
+
+## ** Mike - Backend "Événements"**
+- **Structure du projet** : Configuration Express, middleware de base
+- **Gestion des événements** :
+  - Routes pour créer/modifier/supprimer des événements
+  - Validation des données (date, lieu, description)
+  - Système de filtrage par date et type
+- **Structure des données** : Définir les modèles d'événements en mémoire
+- **Routes principales** : `/events` (GET, POST, PUT, DELETE)
+
+## ** Adrien - Backend "Participants"** 
+- **Gestion des utilisateurs** : Système d'inscription/désinscription
+- **Routes participants** :
+  - S'inscrire à un événement (`/events/:id/register`)
+  - Se désinscrire (`/events/:id/unregister`)
+  - Voir la liste des participants (artistes) --  (`/events/:id/participants`)
+- **Validation** : Éviter les doublons, gérer les limites de participants
+- **Fonctionnalités bonus** : Notifications, liste d'attente
+
+## **Collaboration commune**
+- **Tests** : Chacun teste les routes de l'autre avec Postman/Thunder Client
+- **Documentation** : Créer ensemble la documentation API
+- **Intégration** : Fusionner le code et résoudre les conflits
+- **Démo finale** : Présenter le projet ensemble
+
+## **Outils de collaboration**
+- Git/GitHub pour le versioning
+- Branches séparées puis merge
+- Communication régulière sur les structures de données
+
+Cette répartition permet de travailler en parallèle tout en apprenant des aspects différents du développement backend node/express !

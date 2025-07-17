@@ -8,3 +8,46 @@ h1 {
   margin-top: 20px;
   text-align: center;
 }
+
+li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.event-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 7px;
+  width: calc(33.333% - 14px);
+  box-sizing: border-box;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.event-item h3 {
+  margin: 0 0 10px;
+}
+.event-item p {
+  margin: 5px 0;
+}
+.event-item p:last-child {
+  margin-bottom: 0;
+}
+.event-item p {
+  font-size: 14px;
+  color: #555;
+}
+.event-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}

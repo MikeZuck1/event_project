@@ -5,17 +5,19 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="/css/index.css")
     link(rel="stylesheet" href="/css/main.css")
-    title home
+    title Belgium events 2025
   body
-    h1 Discover the events in Belgium.
+    h1 Discover the events in Belgium
     p.paragraph Welcome to the univers of events in Belgium. Here you can find all the information you need about upcoming events, popular events, and the latest news.
     h2 Upcoming events
-    ul
+    .event-container
       each event in events
-        li
+        .event-item
           h3= event.title
-          p Date: #{event.date}
+          p Date: #{event.date} | Time: #{event.time}
           p Location: #{event.location}
+          p Type: #{event.type}
+          p Description: #{event.description}
     h2 Popular events
     ul
       li Event A - Date: 2025-04-05
