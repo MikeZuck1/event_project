@@ -3,9 +3,32 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title= title 
+    link(rel="stylesheet" href="/css/index.css")
+    link(rel="stylesheet" href="/css/main.css")
+    title Belgium events 2025
   body
-    h1= h1
-    p Si vous avez des questions, n'hésitez pas à nous contacter.
+    h1 Discover the events in Belgium
+    p.paragraph Welcome to the univers of events in Belgium. Here you can find all the information you need about upcoming events, popular events, and the latest news.
+    h2 Upcoming events
+    .event-container
+      each event in events
+        .event-item
+          h3= event.title
+          p Date: #{event.date} | Time: #{event.time}
+          p Location: #{event.location}
+          p Type: #{event.type}
+          p Description: #{event.description}
+    h2 Popular events
+    ul
+      li Event A - Date: 2025-04-05
+      li Event B - Date: 2025-05-20
+      li Event C - Date: 2025-06-30
+    h2 Latest news
+    ul
+      li News 1 - Date: 2025-01-10
+      li News 2 - Date: 2025-02-20
+      li News 3 - Date: 2025-03-15
+    h2 Contact us
+    p If you have any questions, feel free to reach out to us at belgium@event.be
     footer
-      p &copy; 2023 Mon Site Web
+      p &copy; 2025 Event Management -- All rights reserved.

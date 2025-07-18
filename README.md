@@ -1,3 +1,8 @@
+# Event Organizer — Backend App
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+A lightweight event management platform built with **Node.js**, **Express**, and **Pug**.
+
 # Event Organizer - Node/Express Project
 
 A simple project to organize events, allow participants to register or unregister, and view participant lists.
@@ -26,10 +31,12 @@ A simple project to organize events, allow participants to register or unregiste
 ├── public/
 └── data/
 
-
 ## Run the Project
 ```bash
 npm install
 node app.js
-Visit http://localhost:3000 to use the app.
-
+Visit `http://localhost:3000` to use the app. 
+```
+## Project Structure
+📄 License
+This project is licensed under the MIT License.
