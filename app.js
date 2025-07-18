@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan"); // HTTP request logger middleware
 const path = require("path");
+const port = process.env.PORT || 3000;
 
 // Import event routes
 const eventRoutes = require("./routes/events.js");
@@ -21,4 +22,4 @@ app.use("/", indexRoutes); // Use index routes for the root path
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
-app.listen(3000);
+app.listen(port);

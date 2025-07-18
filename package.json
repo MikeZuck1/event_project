@@ -2,13 +2,14 @@
   "name": "event_project",
   "version": "1.0.0",
   "main": "app.js",
-  "scripts": { 
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "morgan": "^1.10.0",
     "pug": "^3.0.3"
