@@ -2,10 +2,16 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/events.css")
+    link(rel="stylesheet", href="/css/main.css")
     title Event Page
   body
     h1 event page
-    p Here you can find all the events.
+    p.paragraph Here you can find all the events.
+    .container
+      .content
+        - for(let i = 0; i <= 29; i++)
+          .block Block #{i}
     footer
-      p &copy; 2023 Mon Site Web
+      p &copy; 2025 Event Management -- All rights reserved.
